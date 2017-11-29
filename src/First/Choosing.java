@@ -23,7 +23,7 @@ class Choosing {
                 meters = fromLenght.toMeters(valueToConvert);
                 converted = toLenght.fromMeters(meters);
 
-                System.out.println(converted);
+                System.out.println(Math.round(converted * 100) / 100);
                 break;
 
             case 2:
@@ -37,7 +37,7 @@ class Choosing {
                 kilos = fromWeight.toKilograms(valueToConvert);
                 converted = toWeight.fromKilograms(kilos);
 
-                System.out.println(converted);
+                System.out.println(Math.round(converted * 100) / 100);
                 break;
 
         }
