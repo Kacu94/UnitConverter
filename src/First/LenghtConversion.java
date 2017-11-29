@@ -45,10 +45,7 @@ public class LenghtConversion {
     public double toMeters(double measurement){
         return (measurement * factor);
     }
-
     public double fromMeters(double measurement){
         return (measurement / factor);
     }
-
-
 }

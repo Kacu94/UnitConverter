@@ -1,10 +1,9 @@
 package First;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
-
 /**
  * Created by Kacper on 2017-11-28.
  */
+
 public class WeightConversion {
 
 
@@ -45,5 +44,4 @@ public class WeightConversion {
     public double fromKilograms(double weight){
         return (weight / factor);
     }
-
 }
