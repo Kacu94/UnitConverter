@@ -4,7 +4,7 @@ package First;
  * Created by Kacper on 2017-11-28.
  */
 
-public class LenghtConversion {
+class LenghtConversion {
 
     final private double INCH_TO_METERS = 0.0254;
     final private double FOOT_TO_METERS = 0.3048;
@@ -17,7 +17,7 @@ public class LenghtConversion {
     private double factor;
 
 
-    public LenghtConversion(String unit){
+    LenghtConversion(String unit){
 
         if (unit.equals("in")) {
             factor = INCH_TO_METERS;
@@ -42,10 +42,10 @@ public class LenghtConversion {
         }
     }
 
-    public double toMeters(double measurement){
+    double toMeters(double measurement){
         return (measurement * factor);
     }
-    public double fromMeters(double measurement){
+    double fromMeters(double measurement){
         return (measurement / factor);
     }
 }

@@ -1,13 +1,14 @@
 package First;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 /**
  * Created by Kacper on 2017-11-28.
  */
-public class Conversion {
+class Conversion {
 
-    public static void console(){
+    static void console(){
 
         Scanner in = new Scanner(System.in);
 
@@ -20,11 +21,12 @@ public class Conversion {
         System.out.println("Convert to: ");
         String toUnit = in.nextLine();
 
-        if (typingConv == "Lenght")
+        if (Objects.equals(typingConv, "Lenght")) {
             Choosing.chooseType((byte) 1, fromUnit, toUnit, in);
-
-        else if (typingConv  == "Weight")
+        }
+        else if (Objects.equals(typingConv, "Weight")) {
             Choosing.chooseType((byte) 2, fromUnit, toUnit, in);
+        }
 
     }
 

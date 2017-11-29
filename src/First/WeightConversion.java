@@ -4,7 +4,7 @@ package First;
  * Created by Kacper on 2017-11-28.
  */
 
-public class WeightConversion {
+class WeightConversion {
 
 
     final private double POUNDS_TO_KILOGRAMS = 0.453;
@@ -16,7 +16,7 @@ public class WeightConversion {
 
     private double factor;
 
-    public WeightConversion(String unit){
+    WeightConversion(String unit){
 
         if (unit.equals("lb")){
             factor = POUNDS_TO_KILOGRAMS;
@@ -38,10 +38,10 @@ public class WeightConversion {
         }
     }
 
-    public double toKilograms(double weight){
+    double toKilograms(double weight){
         return (weight * factor);
     }
-    public double fromKilograms(double weight){
+    double fromKilograms(double weight){
         return (weight / factor);
     }
 }

@@ -5,9 +5,9 @@ import java.util.Scanner;
 /**
  * Created by Kacper on 2017-11-29.
  */
-public class Choosing {
+class Choosing {
 
-    public static void chooseType(byte type, String fromUnit, String toUnit, Scanner in) {
+    static void chooseType(byte type, String fromUnit, String toUnit, Scanner in) {
 
         double valueToConvert, meters, kilos, converted;
 
